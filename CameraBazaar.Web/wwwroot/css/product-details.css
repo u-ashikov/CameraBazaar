@@ -1,0 +1,29 @@
+﻿p.product-details-title {
+    font-size:20px;
+}
+
+img.product-img {
+    border:1px solid #d9d6d6;
+    border-radius:20px;
+}
+
+.stock-status {
+    font-weight:700;
+}
+
+a.seller {
+    font-size:20px;
+}
+
+article.product-details, 
+p.characteristics {
+    margin-top: 10px;
+}
+
+ul li.light-metering {
+    margin-left:80px;
+}
+
+a.back {
+    margin-top: 10px;
+}

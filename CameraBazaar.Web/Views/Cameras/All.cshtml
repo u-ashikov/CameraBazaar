@@ -1,0 +1,45 @@
+﻿@model AllCamerasViewModel
+
+@{
+    ViewData["Title"] = "All Cameras";
+}
+
+<h2 class="text-center">All Cameras</h2>
+<hr />
+
+@if (Model.Cameras.Count() == 0)
+{
+    <div class="container-fluid">
+        <div class="alert alert-success col-md-8 col-md-offset-2" role="alert">
+            <h4 class="alert-heading">Oooops !</h4>
+            <p>There are no cameras yet.</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container-fluid">
+        @foreach (var camera in Model.Cameras)
+        {
+            @Html.Partial("_CameraListItem", camera)
+        }
+    </div>
+
+    <div class="row col-md-offset-5">
+        <ul class="pagination">
+            <li class="page-item @(Model.Pagination.CurrentPage == 1 ? "blocked" : string.Empty)">
+                <a class="page-link" href="/cameras/all?page=@Model.Pagination.PreviousPage">Previous</a>
+            </li>
+            @for (var i = 1; i <= Model.Pagination.TotalPages; i++)
+            {
+                <li class="page-item @(Model.Pagination.CurrentPage == i ? "active" : string.Empty)">
+                    <a class="page-link" href="/cameras/all?page=@i">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.Pagination.CurrentPage == Model.Pagination.TotalPages ? "blocked" : string.Empty)">
+                <a class="page-link" href="/cameras/all?page=@Model.Pagination.NextPage">Next</a>
+            </li>
+        </ul>
+    </div>
+}
+

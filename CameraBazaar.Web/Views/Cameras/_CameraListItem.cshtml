@@ -1,0 +1,30 @@
+﻿@model CameraListingServiceModel
+
+@{ 
+    var isOwner = (User.Identity.Name == Model.Seller && Context.Request.Path != "/cameras/all") ? "" : "not-owner";
+}
+<div class="info row col-md-12 col-md-offset-0">
+    <div class="col-md-3">
+        <img class="camera-img" src="@Model.ImageUrl" alt="@Model.Make">
+    </div>
+    <div class="details-container col-md-9 col-md-offset-0">
+        <div class="camera-info row">
+            <span class="col-md-5">
+                <strong>@Model.Make @Model.Model</strong>
+            </span>
+            <span class="col-md-4 price">
+                $ @Model.Price.ToPrice()
+            </span>
+            <a asp-controller="Cameras" asp-action="Edit" asp-route-id="@Model.Id" class="@isOwner btn btn-primary col-md-3">Edit</a>
+        </div>
+        <div class="camera-details row">
+            <a asp-controller="Cameras" asp-action="Details" asp-route-id="@Model.Id" class="col-md-5 details">Details</a>
+            <div class="col-md-4 text-uppercase text-@(Model.InStock ? "success":"danger")">
+                @(Model.InStock ? "in stock" : "out of stock")
+            </div>
+            @Html.ActionLink("Delete","Delete","Cameras",
+                new { id = Model.Id, seller = Model.Seller },
+                new { onclick = $"return confirm('Are you sure you want to delete {Model.Make} {Model.Model}?')", @class = $"btn btn-danger col-md-3 {@isOwner}" })
+        </div>
+    </div>
+</div>

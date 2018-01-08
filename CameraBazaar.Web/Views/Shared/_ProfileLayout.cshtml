@@ -1,0 +1,54 @@
+﻿@inject UserManager<User> UserManager
+
+@{ 
+    var loggedInUserId = UserManager.GetUserId(User);
+}
+
+<environment include="Development">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/all-cameras.css" />
+    <link rel="stylesheet" href="~/css/product-details.css" />
+    <link rel="stylesheet" href="~/css/user-profile.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</environment>
+
+<div class="container">
+    <nav class="side-nav col-md-2">
+        <ul class="navigation">
+            <li class="link-item">
+                <a href="/cameras/all">All Cameras</a>
+            </li>
+            <li class="link-item">
+                <a href="/Account/Details?id=@loggedInUserId">My Profile</a>
+            </li>
+            <li class="link-item">
+                <a href="/account/edit/@loggedInUserId">Edit My Profile</a>
+            </li>
+            <li class="link-item">
+                <a href="/cameras/add">Add Camera</a>
+            </li>
+            @if (User.IsInRole("Administrator"))
+            {
+                <li>
+                    <a href="/admin/users/all">Users</a>
+                </li>
+            }
+            <li class="link-item">
+                <form method="post" asp-action="Logout" asp-controller="Account">
+                    <button type="submit" class="logout btn-link">Log out</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrapper col-md-10 col-md-offset-2">
+        @if (TempData["message"] != null)
+        {
+            <div class="alert alert-@TempData["alert-type"] alert-dismissible text-center" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4>@TempData["message"]</h4>
+            </div>
+        }
+        @RenderBody();
+    </div>
+</div>
+

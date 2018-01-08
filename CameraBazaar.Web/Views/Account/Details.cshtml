@@ -1,0 +1,87 @@
+﻿@model UserProfileViewModel
+
+@{
+    ViewData["Title"] = "Seller Details";
+    var isOwner = Model.Profile.Username == User.Identity.Name;
+}
+
+@{
+    Layout = "_ProfileLayout";
+}
+
+<h2 class="text-center">Seller Details</h2>
+<hr />
+<h2>
+    @Model.Profile.Username
+    @if (isOwner)
+    {
+        <a asp-controller="Account" asp-action="Edit" asp-route-id="@Model.Profile.Id" class="edit-profile btn btn-primary">Edit Profile</a>
+        <span class="login-time">
+            @(Model.Profile.LastLoginTime == null ? $"First login time: {Model.Profile.FirstLoginTime}" : $"Last login time: {Model.Profile.LastLoginTime}")
+        </span>
+    }
+</h2>
+<div class="user-details">
+    <p>
+        <strong>Email: </strong>
+        @Model.Profile.Email
+    </p>
+    <p>
+        <strong>Phone: </strong>
+        @Model.Profile.PhoneNumber
+    </p>
+    <p>
+        <strong>Cameras: </strong>
+        <strong>@Model.Profile.CamerasInStock</strong> in stock / <strong>@Model.Profile.CamerasOutOfStock</strong> out of stock
+    </p>
+</div>
+<div class="row">
+    <h3 class="text-center col-md-12">Cameras</h3>
+    <hr class="col-md-12" />
+</div>
+<div class="container-fluid">
+    @if (Model.Profile.Cameras.Count() == 0)
+    {
+        <div class="alert alert-success col-md-8 col-md-offset-2" role="alert">
+            <h4 class="alert-heading">Oooops !</h4>
+            @if (isOwner)
+            {
+                <p>You are not selling any cameras yet. Go and <a href="/cameras/add">add</a> some.</p>
+            }
+            else
+            {
+                <p>This user is not selling any cameras yet. Go to <a href="/cameras/all">cameras list</a> to find more offers of other users.</p>
+            }
+        </div>
+    }
+    else
+    {
+        @foreach (var camera in Model.Profile.Cameras)
+        {
+            @Html.Partial("~/Views/Cameras/_CameraListItem.cshtml", camera)
+        }
+
+        <div class="row col-md-offset-5">
+            <ul class="pagination">
+                <li class="page-item @(Model.Pagination.CurrentPage == 1 ? "blocked" : string.Empty)">
+                    <a class="page-link" href="/Account/Details?id=@Model.Profile.Id&page=@Model.Pagination.PreviousPage">Previous</a>
+                </li>
+                @for (var i = 1; i <= Model.Pagination.TotalPages; i++)
+                {
+                    <li class="page-item @(Model.Pagination.CurrentPage == i ? "active" : string.Empty)">
+                        <a class="page-link" href="/Account/Details?id=@Model.Profile.Id&page=@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @(Model.Pagination.CurrentPage == Model.Pagination.TotalPages ? "blocked" : string.Empty)">
+                    <a class="page-link" href="/Account/Details?id=@Model.Profile.Id&page=@Model.Pagination.NextPage">Next</a>
+                </li>
+            </ul>
+        </div>
+    }
+</div>
+
+<hr />
+<footer>
+    <p class="text-center">&copy; 2017 - Camera Bazaar</p>
+</footer>
+

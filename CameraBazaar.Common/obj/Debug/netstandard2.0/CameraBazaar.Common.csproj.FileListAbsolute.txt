@@ -1,0 +1,9 @@
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\bin\Debug\netstandard2.0\CameraBazaar.Common.deps.json
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\bin\Debug\netstandard2.0\CameraBazaar.Common.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\bin\Debug\netstandard2.0\CameraBazaar.Common.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.csprojResolveAssemblyReference.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.csproj.CoreCompileInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.AssemblyInfoInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.AssemblyInfo.cs
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Common\obj\Debug\netstandard2.0\CameraBazaar.Common.pdb

@@ -1,0 +1,15 @@
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.csprojResolveAssemblyReference.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.csproj.CoreCompileInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfoInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.AssemblyInfo.cs
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.deps.json
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Data.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\obj\Debug\netstandard2.0\CameraBazaar.Data.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Common.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\CameraBazaar.Common.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Data\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Razor.Language.xml

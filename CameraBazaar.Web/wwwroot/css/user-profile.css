@@ -1,0 +1,57 @@
+﻿a.back {
+    position:relative;
+    top:60px;
+}
+
+nav.side-nav {
+    background-color: black;
+    color: white;
+    min-height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+nav.side-nav ul {
+    list-style-type:none;
+    width:100%;
+    padding-left:0;
+    text-align:center;
+}
+
+nav.side-nav ul li {
+    padding-right:40px;
+    margin:10px 0 10px 10px;
+    line-height:30px;
+}
+
+nav.side-nav ul li a:hover,
+nav.side-nav ul li form button:hover {
+    color:#48dcc5;
+}
+
+nav.side-nav ul li a,
+.logout {
+    text-decoration:none;
+    color:white;
+}
+
+.logout:hover {
+    text-decoration:none;
+    color:white;
+}
+
+a.edit-profile {
+    margin-left:10px;
+}
+
+h2 > span.login-time {
+    float:right;
+    margin-top:5px;
+    font-size:22px;
+}
+
+li.active,
+li.blocked {
+    pointer-events: none;
+}

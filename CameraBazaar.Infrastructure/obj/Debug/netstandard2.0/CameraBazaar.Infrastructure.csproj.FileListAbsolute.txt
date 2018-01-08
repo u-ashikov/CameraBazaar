@@ -1,0 +1,17 @@
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.AssemblyInfo.cs
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Infrastructure.deps.json
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Infrastructure.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Infrastructure.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Data.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Services.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Data.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Services.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\obj\Debug\netstandard2.0\CameraBazaar.Infrastructure.pdb
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Common.dll
+C:\Users\uashi\Documents\Visual Studio 2017\Projects\CameraBazaar.Web\CameraBazaar.Infrastructure\bin\Debug\netstandard2.0\CameraBazaar.Common.pdb

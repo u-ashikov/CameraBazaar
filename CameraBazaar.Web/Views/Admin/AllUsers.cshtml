@@ -1,0 +1,60 @@
+﻿@model AllUsersViewModel
+
+@{
+    ViewData["Title"] = "All Users";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+<hr />
+
+@if (Model.Users.Count() == 0)
+{
+    <div class="container-fluid">
+        <div class="alert alert-success col-md-8 col-md-offset-2" role="alert">
+            <h4 class="alert-heading">Oooops !</h4>
+            <p>There are no users yet.</p>
+        </div>
+    </div>
+}
+else
+{
+    <table class="table table-bordered table-hover text-center">
+        <thead>
+            <tr>
+                <th class="text-center">Username</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Is Restricted</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@(user.IsRestricted ? "Yes" : "No")</td>
+                    <td>
+                        <a asp-action="ChangePermission" asp-controller="Admin" asp-route-id="@user.Id" class="btn btn-@(user.IsRestricted ? "success":"danger")">@(user.IsRestricted ? "Unrestrict" : "Restrict")</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <ul class="pagination">
+        <li class="page-item @(Model.Pagination.CurrentPage == 1 ? "blocked" : string.Empty)">
+            <a class="page-link" href="/admin/users/all?page=@Model.Pagination.PreviousPage">Previous</a>
+        </li>
+        @for (int i = 1; i <= Model.Pagination.TotalPages; i++)
+        {
+        <li class="page-item @(Model.Pagination.CurrentPage == i? " active" : string.Empty)">
+            <a class="page-link" href="/admin/users/all?page=@i">@i</a>
+        </li>
+        }
+        <li class="page-item @(Model.Pagination.CurrentPage == Model.Pagination.TotalPages ? "blocked" : string.Empty)">
+            <a class="page-link" href="/admin/users/all?page=@Model.Pagination.NextPage">Next</a>
+        </li>
+    </ul>
+}
+

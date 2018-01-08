@@ -1,0 +1,39 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#qrCode {
+    margin: 15px;
+}
+
+li.active,
+li.blocked {
+    pointer-events:none;
+}
+
+div.carousel-inner > div.item > img {
+    height:450px;
+    width:100%;
+}
+
+div#myCarousel {
+    margin-top:20px;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-caption {
+        display: none;
+    }
+}

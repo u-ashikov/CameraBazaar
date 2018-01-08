@@ -1,0 +1,14 @@
+﻿@model CameraDetailsServiceModel
+
+@{
+    ViewData["Title"] = "Camera Details";
+}
+
+<a asp-controller="Cameras" asp-action="All" class="btn btn-info back">Back</a>
+<h2 class="text-center">
+   Camera Details
+</h2>
+<hr />
+
+@Html.Partial("_CameraInfo", Model)
+

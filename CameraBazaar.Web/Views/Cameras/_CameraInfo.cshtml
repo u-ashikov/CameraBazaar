@@ -1,0 +1,61 @@
+﻿@model CameraDetailsServiceModel
+
+<div class="container col-md-12">
+    <div class="col-md-4 left-part">
+        <img src="@Model.ImageUrl" alt="@Model.Make" width="300" height="250" class="product-img" />
+    </div>
+    <div class="col-md-8 right-part">
+        <p class="product-details-title">
+            <strong>@Model.Make @Model.Model - $ @Model.Price.ToPrice()</strong>
+            - <span class="stock-status text-@(Model.InStock ? "success" : "danger") text-uppercase">@(Model.InStock ? "in stock" : "out of stock")</span>
+        </p>
+        <a asp-controller="Account" asp-action="Details" asp-route-id="@Model.SellerId" class="seller">@Model.Seller</a>
+        <br />
+        <hr />
+        <p class="text-center text-uppercase characteristics">
+            <strong>camera characteristics:</strong>
+        </p>
+        <article class="product-details">
+            <p>
+                <strong>Is Full Frame:</strong>
+                @Model.IsFullFrame
+            </p>
+            <p>
+                <strong>Min Shutter Speed:</strong>
+                @Model.MinShutterSpeed
+            </p>
+            <p>
+                <strong>Max Shutter Speed:</strong>
+                @Model.MaxShutterSpeed
+            </p>
+            <p>
+                <strong class="text-right">Min ISO:</strong>
+                @Model.MinIso
+            </p>
+            <p>
+                <strong>Max ISO:</strong>
+                @Model.MaxIso
+            </p>
+            <p>
+                <strong>Video Resolution:</strong>
+                @Model.VideoResolution
+            </p>
+            <p>
+                <strong>Light Metering:</strong>
+                <ul>
+                    @foreach (var lm in Model.LightMeterings)
+                    {
+                        <li class="light-metering">@lm.DashSeparate()</li>
+                    }
+                </ul>
+            </p>
+            <p>
+                <strong>Description: </strong>
+                @Model.Description
+            </p>
+        </article>
+        <hr />
+    </div>
+</div>
+
+
