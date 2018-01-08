@@ -23,7 +23,7 @@ Just download or clone the repository an run it in Visual Studio on your local m
 
 ## Built With
 
-*C#
+* C#
 * ASP.NET Core
 * Entity Framework Core
 * HTML
