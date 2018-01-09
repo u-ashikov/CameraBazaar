@@ -4,7 +4,7 @@ Simple camera bazaar application built for the C# MVC Frameworks course at SoftU
 
 ## Getting Started
 
-Just download or clone the repository an run it in Visual Studio on your local machine.
+Just download or clone the repository and run it in Visual Studio on your local machine.
 
 ## Features
 
